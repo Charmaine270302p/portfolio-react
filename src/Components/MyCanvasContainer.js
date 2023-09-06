@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import $ from 'jquery'; 
-import tagCanvas from 'tag-canvas'
+//import tagCanvas from 'tag-canvas'
 
 function MyCanvasContainer() {
   useEffect(() => {
@@ -34,7 +34,7 @@ function MyCanvasContainer() {
         <li><a href="#" target="_blank">React.JS</a></li>
         <li><a href="#" target="_blank">ANGULAR</a></li>
         <li><a href="#" target="_blank">TYPESCRIPT</a></li>
-        <li><a href="#" target="_blank">React.JS</a></li>
+        <li><a href="" target="_blank">React.JS</a></li>
       </ul>
     </div>
   );

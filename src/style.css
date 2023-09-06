@@ -543,11 +543,14 @@ body {
   position: absolute;
   left: 37%;
 }
+#skill #myCanvasContainer #myCanvas {
+  position: absolute;
+}
 
 #work {
   position: absolute;
   left: 21%;
-  top: 7%;
+  top: 10%;
 }
 #work .work-txt h1 {
   color: rgb(255, 196, 72);
@@ -560,10 +563,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
+  padding-top: 50px;
 }
 #work .work-gallery .workfirst {
   width: 360px;
-  height: 280px;
+  height: 240px;
+}
+#work .work-gallery .workfirst:hover {
+  background-color: aqua;
 }
 
 .contact-page {
@@ -575,7 +582,9 @@ body {
 @media (max-width: 576px) {
   .contact-page {
     left: 34%;
-    top: 25%;
+    top: 0%;
+    overflow-y: hidden;
+    overflow: hidden;
   }
 }
 .contact-page .contact-txt h1 {
@@ -659,6 +668,10 @@ body {
 .contact-page .contact-txt .contact-form ul {
   padding: 0;
   margin: 0;
+  /*   @include mediaQuery(576px){
+       display:none;
+
+    } */
 }
 .contact-page .contact-txt .contact-form ul li {
   padding: 0;
@@ -726,6 +739,11 @@ body {
 .contact-page .contact-email {
   width: 70%;
   padding: 125px 0px 0px 0px;
+}
+@media (max-width: 576px) {
+  .contact-page .contact-email {
+    display: none;
+  }
 }
 .contact-page .contact-email .txt-1, .contact-page .contact-email .txt-2 {
   color: white;

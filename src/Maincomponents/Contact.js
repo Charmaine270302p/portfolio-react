@@ -94,19 +94,19 @@ const Contact = () => {
                 <div className="contact-email">
                     <h3 className='txt-1'>Email me :</h3>
                     <div className="contact1">
-                        <img className='' src= 'images/icon email 1.png'  alt="logo"/>
+                        <img className='' src= 'images/icon email 1.png'  alt="emailicon"/>
                         <a  className='link' href="#">charmainemwandiringa@gmail.com</a>
                     </div>
 
                     <h3 className='txt-2'>Contact me :</h3>
                     <div className="contact2">
-                        <img className='' src= 'images/icon call 1.png'  alt="logo"/>
+                        <img className='' src= 'images/icon call 1.png'  alt="callicon"/>
                         <a className='link' href="#">+263 777228641</a>
                     </div>
                 </div>
 
                 <div className="contact-bg">
-                    <img className='contact-img' src= 'images/bg-header 2.png'  alt="logo"/>
+                    <img className='contact-img' src= 'images/bg-header 2.png'  alt="contactimg"/>
                 </div>
             </div>
         

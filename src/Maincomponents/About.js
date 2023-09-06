@@ -27,7 +27,7 @@ const About = () => {
 
             <a href="#first"><button className="but2">Learn More</button></a>
             <div className="page-bg-about">
-                    <img className='bgsecond' src= 'images/bg-header 2.png'  alt="logo"/>
+                    <img className='bgsecond' src= 'images/bg-header 2.png'  alt="aboutimage"/>
             </div>
             
        </div>

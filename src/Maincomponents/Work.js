@@ -18,12 +18,12 @@ const Work = () => {
     </div>
 
     <div className="work-gallery">
-        <img className="workfirst" src= 'images/Group 13.png'  alt="logo"/>
-        <img className="workfirst" src= 'images/Group 13.png'  alt="logo"/>
-        <img className="workfirst" src= 'images/Group 13.png'  alt="logo"/>
-        <img className="workfirst" src= 'images/Group 13.png'  alt="logo"/>
-        <img className="workfirst" src= 'images/Group 13.png'  alt="logo"/>
-        <img className="workfirst" src= 'images/Group 13.png'  alt="logo"/>
+        <img className="workfirst" src= 'images/Luis.png'  alt="workfirstimage"/>
+        <img className="workfirst" src= 'images/Bakersinn.png'  alt="worksecondimage"/>
+        <img className="workfirst" src= 'images/Directhome.png'  alt="workforthimage"/>
+        <img className="workfirst" src= 'images/Tay.png'  alt="workthirdimage"/>
+        <img className="workfirst" src= 'images/Load.png'  alt="workforthimage"/>
+        <img className="workfirst" src= 'images/resellme.png'  alt="workfiveimage"/>
     </div>
    
   

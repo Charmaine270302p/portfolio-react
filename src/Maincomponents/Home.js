@@ -1,11 +1,12 @@
 import { useState,useEffect } from 'react';
 import {Outlet} from 'react-router-dom';
 import AnimatedLetters from '../Components/AnimatedLetters';
+import CV from "../Components/dox/Charmaine-CV.pdf";
 
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['    ','C','h','a','r','m','a','i','n','e']
+    const nameArray = ['  ','C','h','a','r','m','a','i','n','e']
     const jobArray = ['W','e','b','    ','D','e','v','e','l','o','p','e','r']
 
  /*    useEffect(() => {
@@ -53,7 +54,7 @@ const Home = () => {
         <>
              <div className="page">
                 <div className="page-bg">
-                    <img className='bgfirst' src= 'images/bg-header 1.png'  alt="logo"/>
+                    <img className='bgfirst' src= 'images/bg-header 1.png'  alt="homeimage"/>
                 </div>
             
          <span className='tags top-tags'>&lt;html&gt;</span> 
@@ -95,8 +96,8 @@ const Home = () => {
                  
                 </h1>
                 <h3>&lt; {/* Front-end Developer */} {text} &gt;</h3>
-                {/* <a href="" download="Charmaine-CV.pdf"><button className="but1">Download Cv</button></a> */}
-                <a href="process.env.PUBLIC_URL" download="Charmaine-CV.pdf"><button className="but1">Download Cv</button></a>
+                 <a href={CV} download="Charmaine-CV.pdf"><button className="but1">Download Cv</button></a> 
+            
             </div> 
 
             
