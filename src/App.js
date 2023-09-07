@@ -4,7 +4,6 @@ import Home from './Maincomponents/Home';
 import About from './Maincomponents/About';  
 import Skills from './Maincomponents/Skills';
 import Work from './Maincomponents/Work';
-import Testimonials from './Maincomponents/Testimonials';
 import Contact from './Maincomponents/Contact';
 import Navbar from "./Components/Navbar";
 
@@ -20,7 +19,7 @@ function App() {
       <Route path="/about" element={<About Us />} />
       <Route path="/skills" element={<Skills />} />
       <Route path="/work" element={<Work />} />
-      <Route path="/testimonials" element={<Testimonials />} />
+     {/*  <Route path="/testimonials" element={<Testimonials />} /> */}
       <Route path="/contact" element={<Contact />} />
    
     </Routes>

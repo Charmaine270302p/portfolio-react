@@ -1,41 +1,38 @@
-import React, { useEffect } from 'react';
-import $ from 'jquery'; 
-//import tagCanvas from 'tag-canvas'
+import React from 'react';
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {
+  faHtml5,
+  faCss3,faSass,
+  faReact,
+  
+  faGitAlt} from '@fortawesome/free-brands-svg-icons';
+
 
 function MyCanvasContainer() {
-  useEffect(() => {
-    $(document).ready(function () {
-      if (!$("#myCanvas").tagcanvas({
-        textColour: "#ffa500",
-        outlineColour: "transparent",
-        reverse: true,
-        depth: 0.2,
-        maxSpeed: 0.10,
-        weight: true,
-      }, "tags")) {
-        $("#myCanvasContainer");
-      }
-    });
-  }, []);  
 
   return (
     <div id="myCanvasContainer">
-      <canvas width="650" height="650" id="myCanvas"></canvas>
-      <ul id="tags">
-        <li><a href="#" target="_blank">HTML</a></li>
-        <li><a href="#" target="_blank">CSS</a></li>
-        <li><a href="#" target="_blank">WORDPRESS</a></li>
-        <li><a href="#" target="_blank">SASS</a></li>
-        <li><a href="#" target="_blank">JQUERY</a></li>
-        <li><a href="#" target="_blank">PHP</a></li>
-        <li><a href="#" target="_blank">GIT</a></li>
-        <li><a href="#" target="_blank">BOOTSTRAP</a></li>
-        <li><a href="#" target="_blank">NODE.JS</a></li>
-        <li><a href="#" target="_blank">React.JS</a></li>
-        <li><a href="#" target="_blank">ANGULAR</a></li>
-        <li><a href="#" target="_blank">TYPESCRIPT</a></li>
-        <li><a href="" target="_blank">React.JS</a></li>
-      </ul>
+        <div className="cubespinner">
+          <div className="face1">
+            <FontAwesomeIcon icon={faHtml5} color='rgb(255, 196, 72)'/>
+          </div>
+          <div className="face2">
+            <FontAwesomeIcon icon={faCss3} color='rgb(255, 196, 72)'/>
+          </div>
+          <div className="face3">
+            <FontAwesomeIcon icon={faSass} color='rgb(255, 196, 72)'/>
+          </div>
+          <div className="face4">
+            <FontAwesomeIcon icon={faReact} color='rgb(255, 196, 72)'/>
+          </div>
+          <div className="face5">
+            <FontAwesomeIcon icon={faGitAlt} color='rgb(255, 196, 72)'/>
+          </div>
+          {/* <div className="face6">
+            <FontAwesomeIcon icon={faES6} color='rgb(255, 196, 72)'/>
+          </div> */}
+
+        </div>
     </div>
   );
 }

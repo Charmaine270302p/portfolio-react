@@ -541,10 +541,64 @@ body {
 }
 #skill #myCanvasContainer {
   position: absolute;
-  left: 37%;
+  left: 70%;
+  top: 38%;
 }
-#skill #myCanvasContainer #myCanvas {
+#skill #myCanvasContainer .cubespinner {
+  animation-name: spincube;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  transform-style: preserve-3d;
+  transform: 100px 100px 0px;
+  margin-left: calc(50% - 100px);
+}
+#skill #myCanvasContainer .cubespinner div {
   position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgb(255, 196, 72);
+  background-color: rgb(244, 244, 241);
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 2px 0px yellow;
+}
+#skill #myCanvasContainer .cubespinner .face1 {
+  transform: rotateZ(100deg);
+}
+#skill #myCanvasContainer .cubespinner .face2 {
+  transform: rotateY(90deg) rotateZ(100deg);
+}
+#skill #myCanvasContainer .cubespinner .face3 {
+  transform: rotateY(90deg) rotateX(90deg) rotateZ(100deg);
+}
+#skill #myCanvasContainer .cubespinner .face4 {
+  transform: rotateY(180deg) rotateZ(100deg) rotateZ(100deg);
+}
+#skill #myCanvasContainer .cubespinner .face5 {
+  transform: rotateY(-90deg) rotateZ(90deg) rotateZ(100deg);
+}
+#skill #myCanvasContainer .cubespinner .face6 {
+  transform: rotateY(-90deg) rotateZ(100deg);
+}
+@keyframes spincube {
+  from, to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(-90deg);
+  }
+  33% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
 }
 
 #work {
@@ -784,4 +838,18 @@ body {
   .contact-page .contact-bg .contact-img {
     display: none;
   }
+}
+
+.testimonials {
+  position: absolute;
+  width: 80%;
+  height: 80vh;
+  left: 20%;
+  top: 10%;
+  background-color: palevioletred;
+}
+.testimonials h1 {
+  color: rgb(255, 196, 72);
+  font-size: 45px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
